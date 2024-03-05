@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing: border-box;
+}
+.favorite-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .favorite-item {
+            text-align: left;
+            padding: 20px;
+            
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+            width: 200;
+        }
+p{
+  text-align: left;
+
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
+html {
+  font-family: "Lucida Sans", sans-serif;
+}
+
+.header {
+  background-color: #9933cc;
+  color: #ffffff;
+  padding: 15px;
+  
+}
+.menu a{
+  text-decoration: none;
+}
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  padding: 8px;
+  margin-bottom: 7px;
+  background-color: #33b5e5;
+  color: #ffffff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.menu li:hover {
+  background-color: #0099cc;
+}
+
+.aside {
+  background-color: white;
+  padding: 0px;
+  color: black;
+  text-align: center; 
+  font-size: 14px;
+  position: absolute; 
+  left: 50%; 
+  transform: translateX(15%);
+}
+
+.footer {
+  background-color: #0099cc;
+  color: #ffffff;
+  text-align: center;
+  font-size: 12px;
+  padding: 15px;
+}
+
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+}
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Celgrindo P. Jubay Jr.</h1>
+</div>
+
+<div class="row">
+  <div class="col-3 col-s-3 menu">
+    <ul>
+      <a href="About Me.html"><li>About me</li></a>
+      <a href="subject taken.html"><li>Subjects Taken</li></a>
+      <a href="Enrolled.html"><li>Enrolled</li></a>
+      <a href="Contact me.html"><li>Contact</li></a>
+      <a href="My Favorites.html"><li>My Favorites</li></a>
+      <a href="gallery.html"><li>Gallery</li></a>
+    </ul>
+  </div>
+  <h1 style="text-align: center;">My Top 10 Favorites</h1>
+  <div class="favorite-container">
+    <div class="favorite-item">
+        <h2>1. Movie</h2>
+        <img src="da.webp" width="150"  alt="movie">
+        <p>Iron Man - An action-packed thriller with lots of twists and turns.</p>
+
+    </div>
+
+    <div class="favorite-item">
+        <h2>2. Food</h2>
+        <img src="chi.jpg" width="200" alt="food">
+        <p>Adobo - A delicious dish from my mom.</p>
+    </div>
+
+    <div class="favorite-item">
+        <h2>3. Music</h2>
+        <img src="dan.jpg"  width="200" alt="music">
+        <p>SuperPowers  - A genre of music that resonates with my emotions.</p>
+    </div>
+
+    <div class="favorite-item">
+        <h2>4.  Sport</h2>
+        <img src="SOC.jpg"  width="200" alt="sport">
+        <p>Soccer(football)- A thrilling sport that I enjoy watching or playing..</p>
+    </div>
+
+    <div class="favorite-item">
+        <h2>5. Animal</h2>
+        <img src="cat.jpg" width="200" alt="animal">
+        <p>Cat - A cute and cuddly creature that brings joy to my life.</p>
+    </div>
+    <div class="favorite-item">
+      <h2>6.Color</h2>
+      <img src="bw.png" width="200" alt="color">
+      <p>Black&White- A vibrant hue that reflects my personality.</p>
+  </div>
+    <div class="favorite-item">
+    <h2>7. Game</h2>
+    <img src="bil.jpg" width="200" alt="game">
+    <p>Billiard- An exciting game that challenges my skills and strategy.</p>
+</div>
+    <div class="favorite-item">
+    <h2>8. Outdoor Activity</h2>
+    <img src="cam.jpg" width="200"  alt="art">
+    <p>Camping -  Immersing oneself in the great outdoors.</p>
+</div>
+    <div class="favorite-item">
+    <h2>9. Online Games</h2>
+    <img src="dot.jpg" width="200"  alt="Online">
+    <p>Mobile Legend&Dota - An immersive experience where individuals connect to virtual worlds through the internet.</p>
+</div>
+<div class="favorite-item">
+  <h2>10. Movie Character</h2>
+  <img src="ton.jpg" width="200" alt="Character">
+  <p>Tony Stark/Iron Man - His technology is always very advanced.</p>
+</div>
+</div>
+
+
+<div class="footer">
+  <p style="text-align: center;">© 2023 - 2024 ITP | All Right Reserved</p>
+</div>
+
+</body>
+</html>

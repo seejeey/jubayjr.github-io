@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+   table, th,td{
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+html {
+  font-family: "Lucida Sans", sans-serif;
+}
+
+.header {
+  background-color: #9933cc;
+  color: #ffffff;
+  padding: 15px;
+}
+.menu a{
+  text-decoration: none;
+}
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  padding: 8px;
+  margin-bottom: 7px;
+  background-color: #33b5e5;
+  color: #ffffff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.menu li:hover {
+  background-color: #0099cc;
+}
+
+.aside {
+  background-color: #33b5e5;
+  padding: 15px;
+  color: #ffffff;
+  text-align: center;
+  font-size: 14px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+.pagination {
+  display: inline-block;
+  
+}
+.center{
+  text-align: center;
+}
+
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 15px;
+  text-decoration: none;
+}
+
+.pagination a.active {
+  background-color: #9933cc;
+  color: white;
+}
+
+.footer {
+  background-color: #0099cc;
+  color: #ffffff;
+  text-align: center;
+  font-size: 12px;
+  padding: 15px;
+}
+
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+}
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Celgrindo P. Jubay Jr.</h1>
+</div>
+
+<div class="row">
+  <div class="col-3 col-s-3 menu">
+    <ul>
+      <a href="About Me.html"><li>About Me</li></a>
+      <a href="subject taken.html"><li>Subjects Taken</li></a>
+      <a href="Enrolled.html"><li>Enrolled</li></a>
+      <a href="Contact me.html"><li>Contact Me</li></a>
+      <a href="My Favorites.html"><li>My Favorites</li></a>
+      <a href="gallery.html"><li>Gallery</li></a>
+    </ul>
+  </div>
+
+  <div class="col-6 col-s-9">
+    <h1>Subjects Taken</h1>
+    <table>
+      <tr>
+          <th colspan="1">Subject Name</th>
+          <th colspan="1">Description</th> 
+          <th rowspan="1">Units</th>
+         
+          
+          
+    
+      </tr>
+      <tr>
+    
+      </tr>
+      <tr>
+          <td rowspan="2">CSIT 4</td>
+          <td rowspan="2">DATA STRUCTURES AND ALGORITHMS</td>
+          <td rowspan="2">3.0</td>
+
+      </tr>
+      <tr>
+
+      </tr>
+      <tr>
+          <td rowspan="2">ITP 3 </td>
+          <td rowspan="2">NETWORKING 1 (CISCO 1: NETWORKING BASICS)</td>
+          <td rowspan="2">3.0</td>
+      </tr>
+      <tr>
+         
+      </tr>
+      <tr>
+          <td rowspan="2">ITEL 1A</td>
+          <td rowspan="2">IT ELECTIVE 1: PLATFORM TECHNOLOGIES</td>
+          <td rowspan="2">3.0</td>
+  
+      </tr>
+      <tr>
+       
+      </tr>
+      <tr>
+          <td rowspan="2">ITEL 2A</td>
+          <td rowspan="2">IT ELECTIVE 2: OBJECT-ORIENTED PROGRAMMING</td>
+          <td rowspan="2">3.0</td>
+          
+      </tr>
+      <tr>
+        
+    </tr>
+      <tr>
+        <td rowspan="2">HIST 1</td>
+        <td rowspan="2">READINGS IN PHILIPPINE HISTORY /MGA BABASAHIN HINGGIL SA KASAYSAYAN NG PILIPINAS</td>
+        <td rowspan="2">3.0</td>
+    </tr>
+    <tr>
+
+    </tr>
+      <tr>
+        <td rowspan="2">SOC ECON</td>
+        <td rowspan="2">THE CONTEMPORARY WORLD / ANG KASALUKUYAN DAIGDIG</td>
+        <td rowspan="2">3.0</td>
+      </tr>
+      <tr>
+      </tr>
+      <tr>
+        <td rowspan="2">PE 3 </td>
+        <td rowspan="2">PATH FIT 3: SPORTS (INDIVIDUAL/DUAL)</td>
+        <td rowspan="2">2.0</td>
+      </tr>
+      </table>
+  </div>
+
+  
+</div>
+<div class="center">
+<div class="pagination">
+  <a href="sub2.html">&laquo;</a>
+  <a href="sub1.html">1</a>
+  <a href="sub2.html">2</a>
+  <a class="active" href="sub3.html">3</a>
+  <a href="sub1.html">&raquo;</a>
+</div>
+</div>
+<div class="footer">
+  <p>© 2023 - 2024 ITP | All Right Reserved</p>
+</div>
+
+</body>
+</html>
